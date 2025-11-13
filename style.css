@@ -1,0 +1,36 @@
+:root{
+  --blue-900:#003366;
+  --blue-600:#1976d2;
+  --blue-50:#e8f1fb;
+  --bg:#f6fbff;
+  --card:#ffffff;
+  --muted:#6b7280;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial; background:var(--bg); color:#0f172a; margin:0;padding:20px}
+.container{max-width:1200px;margin:0 auto}
+.header{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.logo{width:48px;height:48px;border-radius:8px}
+h1{font-size:20px;margin:0;color:var(--blue-900)}
+.grid{display:grid;grid-template-columns:1fr 420px;gap:18px}
+.left{display:flex;flex-direction:column;gap:12px}
+.right{display:flex;flex-direction:column;gap:12px}
+.card{background:var(--card);border-radius:12px;padding:12px;box-shadow:0 6px 18px rgba(3,20,60,0.06)}
+label{font-weight:700;color:var(--blue-900);display:block;margin-bottom:8px}
+.chatBox{height:260px;overflow:auto;border:1px solid #edf2fb;padding:10px;border-radius:8px;background:var(--blue-50)}
+.chatMessage{margin:8px 0;padding:8px;border-radius:8px;max-width:85%}
+.chatMessage.user{background:#dbefff;margin-left:auto}
+.chatMessage.assistant{background:#fff;border:1px solid #eef6ff}
+input{width:100%;padding:8px;border-radius:8px;border:1px solid #dfeffd;margin-top:6px}
+.btn{background:var(--blue-900);color:#fff;padding:7px 12px;border-radius:8px;border:none;cursor:pointer}
+.btn.small{padding:6px 8px;font-size:13px}
+.playerWrap{height:260px;background:#000;border-radius:8px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.playerInner{width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:#fff}
+.metaArea{margin-top:8px;color:var(--muted);font-size:13px}
+.socialRow{display:flex;gap:12px}
+.socialCol{flex:1}
+.embed{margin-top:8px}
+.previewBox{min-height:120px;display:flex;align-items:center;justify-content:center;background:#f4f7fb;border-radius:8px;overflow:hidden;padding:6px}
+.quoteCard{display:flex;flex-direction:column;gap:8px}
+.quoteText{font-style:italic;color:var(--muted)}
+@media (max-width:1000px){.grid{grid-template-columns:1fr}.right{order:-1}}

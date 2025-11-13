@@ -1,2 +1,1 @@
-# sumber-inspirasi-
-sumber inspirasi ai
+Sumber Inspirasi — Best of The Best\nSee README in project.\n
